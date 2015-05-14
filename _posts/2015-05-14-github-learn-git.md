@@ -4,7 +4,7 @@ title: Git 自学教程
 description: "git."
 tags: [git]
 ---
-#Git 自学教程（Mac）
+#Git 自学教程
 
 
 	学 Git 也有些时候了，但知识点零零散散，虽整理在印象笔记中，但过于繁杂，故整理一些常用的知识放置于博客。
