@@ -5,8 +5,9 @@ description: "Android设计模式"
 tags: [设计模式]
 ---
 
-部分内容转载自[Mr.Simple的专栏]("http://blog.csdn.net/bboyfeiyu/article/details/24375481")
 ##Bulider 模式
+部分内容转载自[Mr.Simple的专栏]("http://blog.csdn.net/bboyfeiyu/article/details/24375481")
+
 在Android 开发中，Builder 模式出现较多的情况就是AlertDialog.Builder了，Buildr模式究竟在什么情况下适用呢？
 ###使用场景
 * 相同的方法，不同的执行顺序，产生不同的事件结果时；
