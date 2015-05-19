@@ -30,33 +30,33 @@ tags: [设计模式]
 
 在Android源码中，我们最常用到的Builder模式就是AlertDialog.Builder， 使用该Builder来构建复杂的AlertDialog对象。简单示例如下 : 
 
-``` Java
-private void showDialog(Context context) {  
-        AlertDialog.Builder builder = new AlertDialog.Builder(context);  
-        builder.setIcon(R.drawable.icon);  
-        builder.setTitle("Title");  
-        builder.setMessage("Message");  
-        builder.setPositiveButton("Button1",  
-                new DialogInterface.OnClickListener() {  
-                    public void onClick(DialogInterface dialog, int whichButton) {  
-                        setTitle("点击了对话框上的Button1");  
-                    }  
-                });  
-        builder.setNeutralButton("Button2",  
-                new DialogInterface.OnClickListener() {  
-                    public void onClick(DialogInterface dialog, int whichButton) {  
-                        setTitle("点击了对话框上的Button2");  
-                    }  
-                });  
-        builder.setNegativeButton("Button3",  
-                new DialogInterface.OnClickListener() {  
-                    public void onClick(DialogInterface dialog, int whichButton) {  
-                        setTitle("点击了对话框上的Button3");  
-                    }  
-                });  
-        builder.create().show();  // 构建AlertDialog， 并且显示
-    } 
-```
+
+    private void showDialog(Context context) {  
+            AlertDialog.Builder builder = new AlertDialog.Builder(context);  
+            builder.setIcon(R.drawable.icon);  
+            builder.setTitle("Title");  
+            builder.setMessage("Message");  
+            builder.setPositiveButton("Button1",  
+                    new DialogInterface.OnClickListener() {  
+                        public void onClick(DialogInterface dialog, int whichButton) {  
+                            setTitle("点击了对话框上的Button1");  
+                        }  
+                    });  
+            builder.setNeutralButton("Button2",  
+                    new DialogInterface.OnClickListener() {  
+                        public void onClick(DialogInterface dialog, int whichButton) {  
+                            setTitle("点击了对话框上的Button2");  
+                        }  
+                    });  
+            builder.setNegativeButton("Button3",  
+                    new DialogInterface.OnClickListener() {  
+                        public void onClick(DialogInterface dialog, int whichButton) {  
+                            setTitle("点击了对话框上的Button3");  
+                        }  
+                    });  
+            builder.create().show();  // 构建AlertDialog， 并且显示
+        } 
+
 
 
 
