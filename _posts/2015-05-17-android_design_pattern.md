@@ -17,3 +17,8 @@ tags: [设计模式]
 * 多个部件或零件，都可以装配到一个对象中，但是产生的运行结果又不相同时；
 * 产品类非常复杂，或者产品类中的调用顺序不同产生了不同的效能，这个时候使用建造者模式非常合适
 
+![UML图]("http://img.blog.csdn.net/20140424103334562?watermark/2/text/aHR0cDovL2Jsb2cuY3Nkbi5uZXQvYmJveWZlaXl1/font/5a6L5L2T/fontsize/400/fill/I0JBQkFCMA==/dissolve/70/gravity/Center")
+
+
+
+
