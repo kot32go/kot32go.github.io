@@ -1,11 +1,11 @@
 ---
 layout: post
-title: Android 开发中常用的设计模式
+title: Android 设计模式 Builder
 description: "Android设计模式"
 tags: [设计模式]
 ---
 
-## Bulider 模式
+## Builder 模式
 
 转载自[Mr.Simple的专栏]("http://blog.csdn.net/bboyfeiyu/article/details/24375481")
 
