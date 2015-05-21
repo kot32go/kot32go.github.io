@@ -250,6 +250,7 @@ AdapterDataSetObserver定义在ListView的父类AbsListView中，代码如下 :
 到这里我们就知道了，当ListView的数据发生变化时，调用Adapter的notifyDataSetChanged函数，这个函数又会调用DataSetObservable的notifyChanged函数，这个函数会调用所有观察者 (AdapterDataSetObserver) 的onChanged方法。这就是一个观察者模式！
 
 **最后我们再捋一捋,AdapterView中有一个内部类AdapterDataSetObserver,在ListView设置Adapter时会构建一个AdapterDataSetObserver，并且注册到Adapter中，这个就是一个观察者。而Adapter中包含一个数据集可观察者DataSetObservable，在数据数量发生变更时开发者手动调用AdapternotifyDataSetChanged，而notifyDataSetChanged实际上会调用DataSetObservable的notifyChanged函数，该函数会遍历所有观察者的onChanged函数。在AdapterDataSetObserver的onChanged函数中会获取Adapter中数据集的新数量，然后调用ListView的requestLayout()方法重新进行布局，更新用户界面。** 
+
 ### 优点缺点
 
 ####优点
