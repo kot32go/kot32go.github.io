@@ -4,7 +4,7 @@ title: Universal_Image_Loader 所有配置简介
 description: "libiarys"
 tags: [libiarys]
 ---
-##Universal_Image_Loader 所有配置简介
+##Universal_Image_Loader 所有配置简介和避免OOM的配置
 
 
   // 内存缓存的设置选项 (最大图片宽度,最大图片高度) 默认当前屏幕分辨率
@@ -80,6 +80,8 @@ tags: [libiarys]
 
   // 建立
   // .build();
+  
+  
 /**
    * DisplayImageOptions所有配置简介
    */
@@ -116,3 +118,18 @@ tags: [libiarys]
   // .handler(new Handler())
   // 建立
   // .build();
+  
+   * 减少配置之中线程池的大小，(.threadPoolSize).推荐1-5；
+   
+   * 使用.bitmapConfig(Bitmap.config.RGB_565)代替ARGB_8888;
+   
+   * 使用.imageScaleType(ImageScaleType.IN_SAMPLE_INT)或者        try.imageScaleType(ImageScaleType.EXACTLY)；
+   
+   * 避免使用RoundedBitmapDisplayer.他会创建新的ARGB_8888格式的Bitmap对象；
+   
+   * 使用.memoryCache(new WeakMemoryCache())，不要使用.cacheInMemory();
+   
+   * 一定不要重复初始化
+   	
+   
+   
