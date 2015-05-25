@@ -10,6 +10,8 @@ tags: [effective android]
 
 最近在读Effective Java ，深感写出的代码尚未达标，故以博文记录自己对其中知识点在Android 开发应用中的领悟。
 
+<a id="more"></a>
+
 ###1.使用静态工厂方法代替构造器
 
 比如：
