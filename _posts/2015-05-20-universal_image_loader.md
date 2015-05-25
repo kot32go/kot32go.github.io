@@ -6,6 +6,7 @@ tags: [libiarys]
 ---
 ##Universal_Image_Loader 所有配置简介和避免OOM的配置
 
+<!--more-->
 
   // 内存缓存的设置选项 (最大图片宽度,最大图片高度) 默认当前屏幕分辨率
   // .memoryCacheExtraOptions(480, 800)
