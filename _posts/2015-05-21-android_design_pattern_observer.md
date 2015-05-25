@@ -9,9 +9,7 @@ tags: [设计模式]
 
 转载自[Mr.Simple的专栏]("http://blog.csdn.net/bboyfeiyu/article/details/44040533")
 
-在Android 开发中，Observer 模式能够做到使事件的发布，订阅更加有条理，运用该思想的库例如 [RxAndroid]("https://github.com/ReactiveX/RxAndroid") [EventBus]("https://github.com/greenrobot/EventBus") 等。
-
-<!--more-->
+在Android 开发中，Observer 模式能够做到使事件的发布，订阅更加有条理，运用该思想的库例如 [RxAndroid]("https://github.com/ReactiveX/RxAndroid") [EventBus]("https://github.com/greenrobot/EventBus") 等。<!--more-->
 
 ### 使用场景
 

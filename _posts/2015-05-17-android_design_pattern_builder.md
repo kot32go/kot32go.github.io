@@ -9,9 +9,7 @@ tags: [设计模式]
 
 转载自[Mr.Simple的专栏]("http://blog.csdn.net/bboyfeiyu/article/details/24375481")
 
-在Android 开发中，Builder 模式出现较多的情况就是AlertDialog.Builder了，Buildr模式究竟在什么情况下适用呢？
-
-<!--more-->
+在Android 开发中，Builder 模式出现较多的情况就是AlertDialog.Builder了，Buildr模式究竟在什么情况下适用呢？<!--more-->
 
 ### 使用场景
 
