@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Effective Android 1
+title: Effective Android 对象篇
 description: "Effective Android"
 tags: [effective android]
 ---
@@ -51,7 +51,7 @@ tags: [effective android]
 * * newInstance 返回一个实例，不会是单例
 
 
-###总结
+####总结
 
 在一些实体类或Fragment 中，可以考虑使用这个方法
 
@@ -74,6 +74,10 @@ tags: [effective android]
 	A a=A.INSTANCE;
 	
 非常方便，特别是在Intent或者PendingIntent 需要传递这个对象时，自动的序列化也是棒棒的。
+
+####缺点
+
+当然，是不能extends的，但是可以implements,好吧，继承也不算什么好的东西。
 
 ### 4.私有化构造器来使类不能被实例化
 
@@ -103,3 +107,28 @@ tags: [effective android]
 以上避免操作可以在onDestory中进行。
 
 ### 7.避免使用 finalizer 方法
+
+### 8.在覆盖equals 方法时注意以下几点：
+
+* 首先使用==操作符检查作比较的A和B是否是同一个引用
+* 转换之前只用 instanceof 检查是否为同一种类型的对象
+* 比较对象中的每一个域，注意比较的顺序
+* 写完后检测是否满足对称性，传递性，一致性
+* 覆盖equals后必须覆盖hashCode
+* 不要把比较的逻辑过于复杂化
+* 不要把声明中的Object 替换成其他对象
+
+####总结：
+
+多想一种可能，就能少出一个 Bug，尤其是Android 上，写出烂的但是能够运行的代码很简单，但是在大型工程中一个小小的内存泄露就可能导致整个APP运行缓慢，同理，一个小小的优化就能防止这一切。把小事做好并不容易。
+
+### 9.覆盖equals方法后必须覆盖hashCode
+
+主要问题在于，使用equals方法判断相等的两个对象的hashCode 必须也相等，这样在hashTable 中才能够正确取值。
+解决方法是自己覆盖hashCode，根据域的值来生成一个独一无二的hashCode
+
+### 10.始终要覆盖toString方法
+
+
+...
+
