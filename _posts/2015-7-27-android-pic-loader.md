@@ -5,6 +5,9 @@ description: "图片加载框架"
 tags: [Android]
 ---
 
+本地图片加载框架的分析<!--more-->
+
+
 ##首先要了解的是Looper、Handler、Message 等之间的关系
 
 
